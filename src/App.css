@@ -1,38 +1,111 @@
-.App {
+*{
+  box-sizing: border-box;
+}
+
+main{
+  padding: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+header a{
+  text-decoration: none;
+  color: black;
+}
+
+header .logo{
+  font-weight: bold;
+}
+
+header nav{
+  display: flex;
+  gap: 15px;
+}
+
+img{
+  max-width: 250px;
+  height: auto;
+}
+
+.post{
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+  display: flex;
+}
+.text{
+  max-width: 50%;
+  margin: 0;
+}
+
+.info{
+  margin: 6px 0;
+  margin-left: 0;
+  color: #888;
+  font-size: .7rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+}
+
+.info .author{
+  font-weight: bolder;
+  color: black;
+  margin-left: 6px ;
+}
+
+.login, .register{
+  max-width: 400px;
+  margin: 0 auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input{
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 5px 7px;
+  background-color: #eee;
+  border: 2px solid #ddd;
+  border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button{
+  width: 100%;
+  display: block;
+  background-color: #555;
+  border: 0;
   color: white;
+  border-radius: 5px;
+  padding: 7px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.post-page .image{
+  max-height:300px;
+  display: flex;
+  overflow:hidden;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.post-page .image img{
+  object-fit: cover;
+  width: 150%;
+}
+div.post-page h1{
+  text-align: center;
+  margin: 10px 0 5px;
+  margin-bottom: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.post-page .content{
+  text-align: center;
 }
